@@ -3,7 +3,10 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace MonContosoNVC5.Data
 {
-    public class UniversityContext : DbSet
+    /// <summary>
+    /// The mistake was here!!! You used a DbSet instead of DbContext
+    /// </summary>
+    public class UniversityContext : DbContext
     {
         public UniversityContext() : base("UniversityContext")
         {
