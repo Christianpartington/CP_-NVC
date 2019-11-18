@@ -26,5 +26,12 @@ namespace MonContosoNVC5.Controllers
 
             return View();
         }
+
+        public ActionResult Hello()
+        {
+            ViewBag.Message = "Your Hello page.";
+
+            return View();
+        }
     }
 }
